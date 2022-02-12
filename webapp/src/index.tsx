@@ -12,6 +12,7 @@ interface PostData {
     id?: number;
     user?: string;
     reply_to?: number;
+    likes?: number;
     content?: string;
 };
 
@@ -33,6 +34,7 @@ class PostForm extends React.Component<{}, PostFormState> {
                 id: 0,
                 user: 'bob',
                 reply_to: 0,
+                likes: 2,
                 content: 'This is a test'
             },
             error: '',
